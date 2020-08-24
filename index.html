@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <script src="https://kit.fontawesome.com/28cb818fe9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <!-- NAV -->
+        <nav class="wrapper">
+            <a class="logo" href="#Home">BEACHSTAYS</a>
+            <ul class="menu">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Blog">Blog</a></li>
+                <li><a href="#About">Contact</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="mobiles-menu">
+            <div class="mobile-menu-container" id="myLinks">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">BLOG</a>
+                <a href="#">CONTACT</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <!-- Header-MID -->
+        <div class="header-mid wrapper">
+            <h1>Welcome to <span>BEACHSTAYS</span></h1>
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <!-- MAIN -->
+    <main>
+        <!-- section-1 -->
+        <section class="section-1">
+            <div class="wrapper">
+                <div class="section-1-text-container">
+                    <h2>Visit Guyana</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et nam eligendi molestias
+                        inventore dolore officia veritatis, explicabo debitis tempora qui excepturi a, nesciunt
+                        ullam aspernatur architecto, optio rerum possimus deserunt quidem quia facere maiores at!
+                        Quasi vero, fugit ullam repudiandae provident inventore ipsa exercitationem perferendis
+                        doloremque reprehenderit dicta, placeat tempore.</p>
+                    <button class="find-out-more">FIND OUT MORE</button>
+                </div>
+                <div class="section-1-image-container">
+                    <img src="images/small-box.jpg" alt="DO IT LATER PLEASE!">
+                </div>
+            </div>
+        </section>
+        <!-- section-2 -->
+        <section class="section-2">
+            <div class="section-2-gallery">
+                <img src="images/gallery-image1.jpg" alt="DO IT LATER PLEASE!!">
+                <img src="images/gallery-image2.jpg" alt="DO IT LATER PLEASE!!">
+                <img src="images/gallery-image3.jpg" alt="DO IT LATER PLEASE!!">
+            </div>
+        </section>
+        <!-- section-3 -->
+        <section class="section-3 ">
+            <div>
+                <a href="#Beach-houses">
+                    <i class="fas fa-gift"></i>
+                    <h2>Beach houses</h2>
+                </a>
+            </div>
+            <div>
+                <a href="#Community">
+                    <i class="fas fa-briefcase"></i>
+                    <h2>Community</h2>
+                </a>
+            </div>
+            <div>
+                <a href="#Blog">
+                    <i class="fas fa-calendar-check"></i>
+                    <h2>Blog</h2>
+                </a>
+            </div>
+            <div>
+                <a href="#Get-in-Touch">
+                    <i class="fas fa-calendar-check"></i>
+                    <h2>Get in Touch</h2>
+                </a>
+            </div>
+        </section>
+        <!-- section-4 -->
+        <section class="section-4">
+            <!-- section-4-top -->
+            <div class="section-4-top wrapper">
+                <img src="images/left-image.jpg" alt="DO IT LATER">
+                <div class="wrapper">
+                    <h2>Plan ahead</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat veritatis voluptatibus inventore
+                        iste assumenda, quam reiciendis facilis doloribus unde quidem soluta ex atque corporis tempore
+                        itaque neque, quis ipsum cupiditate? Nostrum asperiores nulla recusandae laudantium, odit quis
+                        esse ad provident.</p>
+                        <button class="find-out-more">
+                            FIND OUT MORE
+                        </button>
+                </div>
+            </div>
+
+            <!-- section-4-bottom -->
+            <div class="section-4-bottom wrapper">
+                <div class="wrapper">
+                    <h2>New locations</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ab illum ipsum quia voluptatum
+                        quaerat dolorum, impedit deserunt laudantium quibusdam aliquam quam soluta quis blanditiis,
+                        laboriosam porro alias cupiditate tempora nulla, corrupti enim. Eos quis quam repellat ducimus,
+                        omnis quidem.</p>
+                    <button class="find-out-more">FIND OUT MORE</button>
+                </div>
+                <img src="images/right-image.jpg" alt="DO IT LATER">
+            </div>
+        </section>
+
+
+        <!-- section-5 -->
+        <section class="section-5">
+            <div class="wrapper">
+                <div class="section-5-image-container">
+                    <img src="images/banner-image.jpg" alt="DO IT LATER PLEASE!">
+                </div>
+                <div class="section-5-text-container">
+                    <h2>Free trip with Beachstays</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et nam eligendi molestias
+                        inventore dolore officia veritatis, explicabo debitis tempora qui excepturi a, nesciunt
+                        ullam aspernatur architecto, optio rerum possimus deserunt quidem quia facere maiores at!
+                        Quasi vero, fugit ullam repudiandae provident inventore ipsa exercitationem perferendis
+                        doloremque reprehenderit dicta, placeat tempore.
+                    </p>
+                    <button class="find-out-more">
+                        FIND OUT MORE
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="copyright">
+            <p>Copyright © 2019 HackerYou</p>
+        </div>
+    </footer>
+
+    <!-- Mobile menu script -->
+    <script>
+        function myFunction() {
+            let x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>

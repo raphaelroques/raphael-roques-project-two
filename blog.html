@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <script src="https://kit.fontawesome.com/28cb818fe9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- NAV -->
+        <nav class="wrapper">
+            <a class="logo" href="#Home">BEACHSTAYS</a>
+            <ul class="menu">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Blog">Blog</a></li>
+                <li><a href="#About">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- mobile menu -->
+        <div class="mobiles-menu">
+            <div class="mobile-menu-container" id="myLinks">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">BLOG</a>
+                <a href="#">CONTACT</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- Header-MID -->
+        <div class="header-mid wrapper">
+            <h1>Blog</h1>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <section>
+            <div>
+                <img src="images/post-image.jpg" alt="DO IT LATER">
+            </div>
+            <div>
+                <h2>Five days of ocean seas</h2>
+                <p>Monday January 21th, 2019 by Bora</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quod eos autem alias enim quidem corporis. Deleniti dolore rerum voluptatibus ex suscipit perspiciatis fugiat non doloremque. Enim nisi eveniet explicabo?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias minima, exercitationem veritatis vel deleniti architecto laudantium temporibus ad magni. Nobis quidem doloremque eaque maxime ipsa laborum consequatur! Impedit facere repellendus totam accusamus sed magnam iste?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A consectetur officiis aperiam culpa sapiente modi asperiores laboriosam voluptatibus maiores dicta laborum, suscipit quos nisi, possimus ea assumenda mollitia autem sequi vero perspiciatis ab necessitatibus beatae nobis fuga. Sunt blanditiis, quo aliquam earum, qui esse, provident minima quod error suscipit odit!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ea doloremque voluptas est quaerat ratione ex earum id neque laboriosam.</p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <img src="images/sidebar-image.jpg" alt="">
+            </div>
+            <div>
+                <h3>Our mission</h3>
+                <p>Nam dapibus nisl vitae elit
+                    fringilla rutrum. Aenean
+                    sollicitudin, erat a elementum.</p>
+                <button>Find out more.</button>
+
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li>Donec facilisis tortor ut</li>
+                    <li>Augue lacinia at viverra</li>
+                    <li>Semper sed sapien metus</li>
+                    <li>Scelerisque nec pharetra</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Comments:</h2>
+            <div>
+                <div>
+                    <img src="images/comment-image.jpg" alt="DO IT LATER">
+                </div>
+                <div>
+                    <h3>Tuesday October 9th, 2019 by Reyansh</h3>
+                    <p>ae Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.
+                        ee Donec viverra eleifend lacus, vitae ullamcorper metus. Sed
+                        sollicitudin ipsum quis nunc sollicitudin ultrices. Donec
+                        euismod scelerisque ligula. Maecenas eu varius risus..</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="images/comment-image2.jpg" alt="DO IT LATER">
+                </div>
+                <div>
+                    <h3>Wednesday October 10th, 2019 by Olivia</h3>
+                    <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed
+                        es sollicitudin ipsum quis nunc sollicitudin ultrices. Donec
+                        euismod scelerisque ligula.</p>
+                </div>
+            </div>
+            <div class="form">
+                <form action="#">
+                    <div class="formtop">
+                        <label class="sr-only" for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name">
+                        <label class="sr-only" for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <label class="sr-only" for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required
+                            maxlength="255"></textarea>
+                    </div>
+                    <div>
+                        <input class="submit" type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="copyright">
+            <p>Copyright © 2019 HackerYou</p>
+        </div>
+    </footer>
+
+    <!-- Mobile menu script -->
+    <script>
+        function myFunction() {
+            let x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
