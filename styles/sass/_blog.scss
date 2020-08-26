@@ -1,0 +1,61 @@
+.blog {
+    &-header {
+        background: url(../images/blog-image-1.jpg);
+        height: 90vh;
+        background-position: center;
+        background-size: cover;
+        h1 {
+            color: white;
+        }
+    }
+}
+
+    .blog {
+        &-main {
+        display: flex;
+        flex-wrap: wrap;
+        }   
+        &-section-1 {
+            width: 60%;
+            border-right: 5px solid #50e3c2;
+            border-bottom: 5px solid #50e3c2;
+            margin-bottom: 100px;
+            padding-left: 5%;
+            position: relative;
+            &-text-container {
+                padding: 12vw 50px 50px 0;
+            }
+            &-image-container {
+                height: 20vw;
+                &-image {
+                    position: absolute;
+                    width: 100%;
+                    top: -120px;
+                    left: 0;
+                }
+            }
+        }
+        &-section-2 {
+            width: 40%;
+            margin-top: 50px;
+            padding-left: 150px;
+        }
+        &-section-3 {
+            width: 60%;
+            padding-left: 5%;
+            &-comment-container {
+                display: flex;
+                margin-bottom: 50px;
+                &-image-conainer {
+                    width: 20%;
+                }
+                &-text-container {
+                    width: 80%;
+                }
+            }
+        }
+    
+    }
+    
+
+

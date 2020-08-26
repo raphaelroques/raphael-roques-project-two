@@ -1,0 +1,39 @@
+ header{
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        .logo {
+            font-family: 'Playfair Display SC';
+            font-size: 3.46rem;
+            color: #50e3c2;
+        }
+        ul {
+            display: flex;
+            li {
+                margin: 0 10px;
+                a {
+                    color: white;
+                    &:hover {
+                        color: #50e3c2;
+                    }
+                }
+            }
+            li:nth-child(4) {
+                margin-right: 0;
+            }
+        }
+    }
+    .mobiles-menu{
+        display: none;
+    }
+    .header-mid {
+        display: flex;
+        justify-content: center;
+        margin-top: 40vh;
+    }
+}
+
+
+
+
