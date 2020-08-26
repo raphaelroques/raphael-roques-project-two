@@ -242,6 +242,9 @@ header nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 20px;
 }
 
@@ -285,6 +288,46 @@ header .header-mid {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 40vh;
+}
+
+@media (max-width: 650px) {
+  header .menu {
+    display: none;
+  }
+  header .mobiles-menu {
+    display: block;
+  }
+  /* mobile menu */
+  .mobiles-menu {
+    padding: 0px 24px;
+    background: #70809066;
+  }
+  .mobiles-menu a {
+    color: white;
+    padding: 10px 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    display: block;
+    text-align: right;
+  }
+  .mobiles-menu a:hover, .mobiles-menu a:focus {
+    color: #50e3c2;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .mobiles-menu a.icon {
+    background: #2c2d2c55;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .mobiles-menu .mobile-menu-container {
+    display: none;
+    background: #2c2d2cab;
+    height: 100vw;
+  }
+  /* end of mobile menu */
 }
 
 footer {
