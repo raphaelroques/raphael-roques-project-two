@@ -404,7 +404,7 @@ footer div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 .home-section-1-text-container {
@@ -434,7 +434,7 @@ footer div {
 
 .home-section-2 {
   background-color: #d2f9f9;
-  padding: 50px 0;
+  padding: 75px 0;
 }
 
 .home-section-2-gallery {
@@ -494,7 +494,7 @@ footer div {
 }
 
 .home-section-3 .home-section-3-container a h2 {
-  display: inline;
+  display: inline-block;
 }
 
 .home-section-3 .home-section-3-container a h2,
@@ -530,22 +530,30 @@ footer div {
           justify-content: center;
 }
 
+.home-section-4-container-image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .home-section-4-container-image-container img {
   color: #50e3c2;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .home-section-4-container-image-container-top {
   -webkit-box-shadow: 20px 20px;
           box-shadow: 20px 20px;
-  -webkit-transform: translate(-20px, -24px);
-          transform: translate(-20px, -24px);
+  -webkit-transform: translate(0, -40px);
+          transform: translate(0, -40px);
 }
 
 .home-section-4-container-image-container-bottom {
   -webkit-box-shadow: -20px 20px;
           box-shadow: -20px 20px;
-  -webkit-transform: translate(20px, 24px);
-          transform: translate(20px, 24px);
+  -webkit-transform: translate(0, 40px);
+          transform: translate(0, 40px);
 }
 
 .home-section-4 .text-top {
@@ -553,7 +561,11 @@ footer div {
       -ms-flex-align: start;
           align-items: flex-start;
   text-align: left;
-  margin-left: 80px;
+  margin-right: calc((5 * 100%) / 50);
+}
+
+.home-section-4 .text-top > * {
+  margin-left: 140px;
 }
 
 .home-section-4 .text-bottom {
@@ -561,7 +573,11 @@ footer div {
       -ms-flex-align: end;
           align-items: flex-end;
   text-align: right;
-  margin-right: 80px;
+  margin-left: calc((5 * 100%) / 50);
+}
+
+.home-section-4 .text-bottom > * {
+  margin-right: 140px;
 }
 
 .home-section-5-text-container {
@@ -617,6 +633,7 @@ footer div {
   border-right: 5px solid #50e3c2;
   border-bottom: 5px solid #50e3c2;
   margin-bottom: 100px;
+  padding-right: 5px;
 }
 
 .blog-section-1-text-container {
@@ -839,6 +856,8 @@ h2 {
   font-family: 'Playfair Display SC';
   margin: 25px 0;
   border: 0;
+  color: white;
+  background-color: #063974;
 }
 
 @media (max-width: 650px) {
