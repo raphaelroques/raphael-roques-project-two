@@ -511,7 +511,6 @@ footer div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 45vh;
 }
 
 .home-section-4-container div {
@@ -529,11 +528,6 @@ footer div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 20px;
-}
-
-.home-section-4-container-image-container {
-  position: relative;
 }
 
 .home-section-4-container-image-container img {
@@ -543,18 +537,15 @@ footer div {
 .home-section-4-container-image-container-top {
   -webkit-box-shadow: 20px 20px;
           box-shadow: 20px 20px;
-  position: absolute;
-  height: auto;
-  top: -10%;
+  -webkit-transform: translate(-20px, -24px);
+          transform: translate(-20px, -24px);
 }
 
 .home-section-4-container-image-container-bottom {
   -webkit-box-shadow: -20px 20px;
           box-shadow: -20px 20px;
-  position: absolute;
-  height: auto;
-  bottom: -10%;
-  right: 0;
+  -webkit-transform: translate(20px, 24px);
+          transform: translate(20px, 24px);
 }
 
 .home-section-4 .text-top {
