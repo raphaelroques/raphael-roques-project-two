@@ -30,8 +30,7 @@
     }
     .header-mid {
         display: flex;
-        justify-content: center;
-        margin-top: 40vh;
+        margin-top: 250px;
     }
 }
 
@@ -43,6 +42,12 @@
         }
         .mobiles-menu{
             display: block;
+        }
+        .header-mid {
+            position: absolute;
+            top: 300px;
+            right: 0px;
+            margin: 0;
         }
     }
 
@@ -76,7 +81,7 @@
     .mobiles-menu .mobile-menu-container {
         display: none;
         background: #2c2d2cab;
-        height: 100vw;
+        height: 50vh;
     }
     /* end of mobile menu */
 

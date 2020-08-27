@@ -56,6 +56,32 @@
         }
     
     }
+
+
+    @media (max-width: 650px) {
+        .blog {
+            &-header {
+                height: 65vh;
+            }
+            &-main  {
+                flex-wrap: inherit;
+                flex-direction: column;
+                align-items: center;
+                .blog {
+                    &-section{
+                        &-1,
+                        &-2,
+                        &-3 {
+                            width: 90%;
+                            padding: 0;
+                            margin: 0;
+                            margin-bottom: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
     
 
 
