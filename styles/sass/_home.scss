@@ -5,12 +5,18 @@
         height: 90vh;
         background-position: center;
         background-size: cover;
+        &-header-box {
+            position: absolute;
+            top: 0;
+            left: -37%;
+            width: 70%;
+        }
     }
 }
 
 .home-section-1 {
     display: flex;
-    padding: 100px 0;
+    padding: 120px 0;
     &-text-container {
         width: 80%;
         display: flex;
@@ -40,6 +46,9 @@
         margin-right: 20px;
             &:nth-child(3){
                 margin-right: 0;
+            }
+            &:hover {
+                transform: scale(105%);
             }
         }
     }  
@@ -163,6 +172,31 @@
 
 }
 
+
+@media (max-width: 950px) {
+    .home-section-4-container {
+        flex-direction: column;
+        align-items: center;
+        div {
+            width: 90%;
+            // margin: 0 auto;
+            
+        }
+        .text{
+            &-top,
+            &-bottom 
+            {
+                margin-left: 0;
+                margin-right: 0;
+                > * {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            
+            }
+        }
+    }
+}
 
 @media (max-width: 650px) {
     .home {

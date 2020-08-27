@@ -70,7 +70,7 @@
     }
 
 
-    @media (max-width: 650px) {
+    @media (max-width: 950px) {
         .blog {
             &-header {
                 height: 65vh;
@@ -88,6 +88,16 @@
                             padding: 0;
                             margin: 0;
                             margin-bottom: 50px;
+                        }
+                        &-2 {
+                            display: flex;
+                            justify-content: space-between;
+                            &-image-container {
+                                width: 40%;
+                            }
+                            &-text-container {
+                                width: 40%;
+                            }
                         }
                     }
                 }
