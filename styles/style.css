@@ -627,22 +627,15 @@ footer div {
   border-bottom: 5px solid #50e3c2;
   margin-bottom: 100px;
   padding-left: 5%;
-  position: relative;
 }
 
 .blog-section-1-text-container {
-  padding: 12vw 50px 50px 0;
-}
-
-.blog-section-1-image-container {
-  height: 20vw;
+  padding: 0 50px 50px 0;
 }
 
 .blog-section-1-image-container-image {
-  position: absolute;
-  width: 100%;
-  top: -120px;
-  left: 0;
+  -webkit-transform: translate(0, -100px);
+          transform: translate(0, -100px);
 }
 
 .blog-section-2 {
