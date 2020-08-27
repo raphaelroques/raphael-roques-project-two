@@ -39,6 +39,18 @@
             width: 40%;
             margin-top: 50px;
             padding-left: 150px;
+            ul,
+            li {
+                list-style: inherit;
+                padding: 5px 0;
+            }
+            h3 {
+                padding: 20px 0;
+            }
+            a {
+                margin: 10px 0;
+                display: inline-block;
+            }
         }
         &-section-3 {
             width: 60%;
