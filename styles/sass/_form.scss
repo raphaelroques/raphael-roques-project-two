@@ -1,28 +1,27 @@
 .form {
     padding: 20px 0;
-    // font-family: 'Lato';
     &-top {
         display: flex;
-        
         &-name {
-            width: calc((100% - 20px)/2);
-            padding: 0 0 20px;
-            border: none;
-            border-bottom: 2px solid #50e3c2;
             margin-right: 20px;
         }
-        &-email {
+        &-email,
+        &-name {
             width: calc((100% - 20px)/2);
-            padding: 0 0 20px;
+            padding: 20px;
             border: none;
             border-bottom: 2px solid #50e3c2;
+            font-family: 'Lato';
+            font-weight: 300;
         }
     }
     &-message {
         width: 100%;
-        padding: 0;
+        padding: 20px;
         margin: 30px 0;
         border: 2px solid #50e3c2;
+        font-family: 'Lato';
+        font-weight: 300;
     }  
     &-submit {
         width: 100%;
@@ -32,6 +31,5 @@
         background: #063974;
         color: white;
         font-family: 'Playfair Display SC';
-        
     }
 }

@@ -20,14 +20,17 @@
             border-right: 5px solid #50e3c2;
             border-bottom: 5px solid #50e3c2;
             margin-bottom: 100px;
-            padding-left: 5%;
+            // padding-left: 5%;
             
             &-text-container {
                 padding: 0 50px 50px 0;
+                margin-left: calc((5 * 100%) / 60);
             }
             &-image-container {
                 &-image {
                     transform: translate(0, -100px);
+                    box-shadow: 10px 10px;
+                    color: #50e3c2;
                 }
             }
         }

@@ -1,7 +1,7 @@
 .contact {
     &-header {
         background: url(../images/contact-image-1.jpg);
-        height: 90vh;
+        height: 70vh;
         background-position: center;
         background-size: cover;
         h1 {
@@ -13,10 +13,10 @@
     }
     &-form {
         width: 80%;
-        transform: translate(0, -129px);
+        transform: translate(-35px, -110px);
         background: white;
         padding: 31px;
-        box-shadow: 20px 20px;
+        box-shadow: 10px 10px;
         color: #50e3c2;
     
     }
@@ -25,10 +25,22 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-left: 80px;
+        margin-left: 50px;
         &-socials {
             display: flex;
+            justify-content: space-between;
+            width: 134px;
+            margin: 20px 0;
+            a {
+                color: #063974;
+                margin-right: 20px;
+                margin-bottom: 20px;
+            }
         }
+        &-info {
+            margin-bottom: 20px;
+        }
+        
     }
 }
 
@@ -43,11 +55,9 @@
             align-items: center;
             .form {
                 width: 100%;
-                padding: 0;
                 transform: translate(0, -60px);
             }
             .contact-section-2 {
-                display: inline;
                 width: 220px;
                 margin: 0;
                 margin-bottom: 50px;
