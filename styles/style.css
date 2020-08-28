@@ -277,6 +277,7 @@ header nav ul {
 
 header nav ul li {
   margin: 0 15px;
+  font-weight: bold;
 }
 
 header nav ul li a {
@@ -380,7 +381,7 @@ footer {
 }
 
 footer div {
-  height: 10vh;
+  height: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
