@@ -539,11 +539,24 @@ footer div {
 }
 
 .home-section-3 .home-section-3-container a i {
-  display: inline;
-  color: #50e3c2;
+  color: white;
   font-size: 4rem;
   position: absolute;
-  left: 0;
+  left: -35px;
+  background: #50e3c2;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 32px;
 }
 
 .home-section-3 .home-section-3-container a h2 {

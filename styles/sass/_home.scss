@@ -67,11 +67,18 @@
             padding: 50px;
             position: relative;
             i {
-                display: inline;
-                color: #50e3c2;
+                color: white;
                 font-size: 4rem;
                 position: absolute;
-                left: 0;
+                left: -35px;
+                background: #50e3c2;
+                border-radius: 50%;
+                width: 75px;
+                height: 75px;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                top: 32px;
             }
             h2 {
                 display: inline-block;
