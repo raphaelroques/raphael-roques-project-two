@@ -677,17 +677,18 @@ footer div {
           flex-direction: row;
 }
 
-.home-section-2-gallery img {
+.home-section-2-gallery li {
+  margin-right: 20px;
   width: calc(100% - 40px)/3;
   display: block;
   margin-right: 20px;
 }
 
-.home-section-2-gallery img:nth-child(3) {
+.home-section-2-gallery li:nth-child(3) {
   margin-right: 0;
 }
 
-.home-section-2-gallery img:hover {
+.home-section-2-gallery li:hover {
   -webkit-transform: scale(105%);
           transform: scale(105%);
 }

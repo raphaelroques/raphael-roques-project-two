@@ -23,18 +23,21 @@
 
     &-gallery {
         display: flex;
-    flex-direction: row;
-        img {
-        width: calc(100% - 40px)/3;
-        display: block;
-        margin-right: 20px;
-            &:nth-child(3){
-                margin-right: 0;
-            }
-            &:hover {
-                transform: scale(105%);
-            }
+        flex-direction: row;
+        li {
+            margin-right: 20px;
+            width: calc(100% - 40px)/3;
+            display: block;
+            margin-right: 20px;
+                &:nth-child(3){
+                    margin-right: 0;
+                }
+                &:hover {
+                        transform: scale(105%);
+                }
         }
+        
+        
     }  
 }
 
