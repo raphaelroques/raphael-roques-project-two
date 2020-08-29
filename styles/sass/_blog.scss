@@ -9,8 +9,6 @@
         border-bottom: 5px solid #50e3c2;
         margin-bottom: 100px;
         padding-right: 5px;
-        // padding-left: 5%;
-        
         &-text-container {
             padding: 0 50px 50px 0;
             margin-left: calc((5 * 100%) / 60);
@@ -83,6 +81,9 @@
                         margin: 0;
                         margin-bottom: 50px;
                     }
+                    &-1{
+                        padding: 0 6px;
+                    }
                     &-2 {
                         display: flex;
                         justify-content: space-between;
@@ -102,6 +103,19 @@
             }
         }
     }
+}
+
+@media (max-width: 950px) {
+    .blog-main {
+        .blog {
+            &-section-2 {
+                &-text-container {
+                    width: 50%;
+                }
+            }
+        }
+    }
+    
 }
 
 
