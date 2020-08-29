@@ -399,6 +399,7 @@ h1 span {
   background-position: center;
   background-size: cover;
   min-height: 700px;
+  position: relative;
 }
 
 .home-header {
@@ -407,9 +408,9 @@ h1 span {
 
 .home-header-header-box {
   position: absolute;
-  bottom: -140px;
   left: 0;
-  width: 47%;
+  width: calc(200px + 26vw);
+  bottom: -85px;
 }
 
 .blog-header {
@@ -484,7 +485,7 @@ header nav ul li:nth-child(4) {
 }
 
 header .header-mid {
-  margin-bottom: 200px;
+  margin-bottom: 250px;
   padding-left: 20vw;
 }
 
@@ -514,7 +515,7 @@ h1 span {
 @media (max-width: 650px) {
   .header.contact-header, .header.home-header, .header.blog-header {
     height: 70vh;
-    min-height: inherit;
+    min-height: 550px;
   }
   .header .menu {
     display: none;

@@ -71,7 +71,7 @@
                 li:nth-child(4) {
                     margin-right: 0;
                 }
-            }
+            }   
         }
         .header-mid {
             margin-bottom: 200px;
@@ -156,6 +156,7 @@ h1 {
             background-position: center;
             background-size: cover;
             min-height: 700px;
+            position: relative;
         }
     }
 }
@@ -165,9 +166,9 @@ h1 {
         background: url(../images/home-image-1.jpg);
         &-header-box {
             position: absolute;
-            bottom: -140px;
             left: 0;
-            width: 47%;
+            width: calc(200px + 26vw);
+            bottom: -85px;
         }
     }
 }
@@ -222,7 +223,7 @@ h1 {
             }
         }
         .header-mid {
-            margin-bottom: 200px;
+            margin-bottom: 250px;
             padding-left: 20vw;
         }
         .mobiles-menu{
@@ -255,7 +256,7 @@ h1 {
         &.blog {
             &-header {
                 height: 70vh;
-                min-height: inherit;
+                min-height: 550px;
             }
         }
     }
