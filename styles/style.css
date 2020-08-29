@@ -690,6 +690,10 @@ footer div {
   padding: 50px 0;
 }
 
+.home-section-3 h3, .home-section-3 p {
+  color: #0c5f4c;
+}
+
 .home-section-3-container {
   width: 50%;
 }
@@ -730,18 +734,13 @@ footer div {
   top: 32px;
 }
 
-.home-section-3-container a h2 {
-  display: inline-block;
-}
-
-.home-section-3-container a h2,
-.home-section-3-container a p {
-  color: #0c5f4c;
-}
-
 .home-section-4 {
   background: #d2f9f9;
   padding: 20px 0;
+}
+
+.home-section-4 h2 {
+  color: #063974;
 }
 
 .home-section-4-container {
@@ -1130,6 +1129,13 @@ h2 {
   font-size: 3.5rem;
   line-height: 58px;
   letter-spacing: 3.8px;
+}
+
+h3 {
+  margin-bottom: 25px;
+  font-size: 3rem;
+  line-height: 58px;
+  letter-spacing: 3.2px;
 }
 
 a {
