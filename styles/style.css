@@ -315,7 +315,7 @@ header nav ul li a {
   color: white;
 }
 
-header nav ul li a:hover {
+header nav ul li a:hover, header nav ul li a:focus {
   color: #50e3c2;
 }
 
@@ -617,6 +617,16 @@ footer div {
   background: #063974;
   color: white;
   font-family: 'Playfair Display SC';
+  cursor: pointer;
+}
+
+.form-submit:hover, .form-submit:focus, .form-submit:active {
+  background-color: #063974b7;
+}
+
+.form-submit:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
 }
 
 .home-section-1 {
@@ -1180,6 +1190,19 @@ address {
   border: 0;
   color: white;
   background-color: #063974;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.find-out-more:hover, .find-out-more:focus {
+  background-color: #063974b7;
 }
 
 @media (max-width: 950px) {

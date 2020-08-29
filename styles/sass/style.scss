@@ -80,6 +80,13 @@ address {
     border: 0;
     color: white;
     background-color: #063974;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover,
+    &:focus {
+        background-color: #063974b7;
+    }
 }
 
 @media (max-width: 950px) {

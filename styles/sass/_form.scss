@@ -31,5 +31,14 @@
         background: #063974;
         color: white;
         font-family: 'Playfair Display SC';
+        cursor: pointer;
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: #063974b7;
+        }
+        &:active {
+            transform: translateY(1px);
+        }
     }
 }
