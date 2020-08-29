@@ -68,11 +68,9 @@ img {
     background-color: #063974;
 }
 
-// @media (max-width: 650px) {
-//     h1{
-//         font-size: calc(8.7rem / 2);
-//         span {
-//             font-size: calc(11.12rem / 2);
-//         }
-//     }
-// }
+@media (max-width: 950px) {
+    p {
+        font-size: 1.5rem;
+        line-height: 25px;
+    }
+}

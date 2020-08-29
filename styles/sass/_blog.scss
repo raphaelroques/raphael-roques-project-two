@@ -1,109 +1,103 @@
 .blog {
-    &-header {
-        background: url(../images/blog-image-1.jpg);
-        height: 90vh;
-        background-position: center;
-        background-size: cover;
-        h1 {
-            color: white;
+    &-main {
+    display: flex;
+    flex-wrap: wrap;
+    }   
+    &-section-1 {
+        width: 60%;
+        border-right: 5px solid #50e3c2;
+        border-bottom: 5px solid #50e3c2;
+        margin-bottom: 100px;
+        padding-right: 5px;
+        // padding-left: 5%;
+        
+        &-text-container {
+            padding: 0 50px 50px 0;
+            margin-left: calc((5 * 100%) / 60);
+        }
+        &-image-container {
+            &-image {
+                transform: translate(0, -100px);
+                box-shadow: 10px 10px;
+                color: #50e3c2;
+            }
+        }
+    }
+    &-section-2 {
+        width: 40%;
+        margin-top: 50px;
+        padding-left: 150px;
+        ul,
+        li {
+            list-style: inherit;
+            padding: 5px 0;
+        }
+        h3 {
+            padding: 20px 0;
+        }
+        a {
+            margin: 10px 0;
+            display: inline-block;
+        }
+    }
+    &-section-3 {
+        width: 60%;
+        padding-left: 5%;
+        &-comment-container {
+            display: flex;
+            margin-bottom: 50px;
+            &-image-conainer {
+                width: 20%;
+            }
+            &-text-container {
+                width: 80%;
+                padding-left: 50px;
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 950px) {
+    .blog {
+        &-header {
+            height: 65vh;
+        }
+        &-main  {
+            flex-wrap: inherit;
+            flex-direction: column;
+            align-items: center;
+            .blog {
+                &-section{
+                    &-1,
+                    &-2,
+                    &-3 {
+                        width: 90%;
+                        padding: 0;
+                        margin: 0;
+                        margin-bottom: 50px;
+                    }
+                    &-2 {
+                        display: flex;
+                        justify-content: space-between;
+                        &-image-container {
+                            width: 40%;
+                        }
+                        &-text-container {
+                            width: 40%;
+                        }
+                    }
+                    // &-3 {
+                    //     // &-comment-container-text-container {
+                    //     //     padding-left: 50px;
+                    //     // }
+                    // }
+                }
+            }
         }
     }
 }
 
-    .blog {
-        &-main {
-        display: flex;
-        flex-wrap: wrap;
-        }   
-        &-section-1 {
-            width: 60%;
-            border-right: 5px solid #50e3c2;
-            border-bottom: 5px solid #50e3c2;
-            margin-bottom: 100px;
-            padding-right: 5px;
-            // padding-left: 5%;
-            
-            &-text-container {
-                padding: 0 50px 50px 0;
-                margin-left: calc((5 * 100%) / 60);
-            }
-            &-image-container {
-                &-image {
-                    transform: translate(0, -100px);
-                    box-shadow: 10px 10px;
-                    color: #50e3c2;
-                }
-            }
-        }
-        &-section-2 {
-            width: 40%;
-            margin-top: 50px;
-            padding-left: 150px;
-            ul,
-            li {
-                list-style: inherit;
-                padding: 5px 0;
-            }
-            h3 {
-                padding: 20px 0;
-            }
-            a {
-                margin: 10px 0;
-                display: inline-block;
-            }
-        }
-        &-section-3 {
-            width: 60%;
-            padding-left: 5%;
-            &-comment-container {
-                display: flex;
-                margin-bottom: 50px;
-                &-image-conainer {
-                    width: 20%;
-                }
-                &-text-container {
-                    width: 80%;
-                }
-            }
-        }
-    
-    }
-
-
-    @media (max-width: 950px) {
-        .blog {
-            &-header {
-                height: 65vh;
-            }
-            &-main  {
-                flex-wrap: inherit;
-                flex-direction: column;
-                align-items: center;
-                .blog {
-                    &-section{
-                        &-1,
-                        &-2,
-                        &-3 {
-                            width: 90%;
-                            padding: 0;
-                            margin: 0;
-                            margin-bottom: 50px;
-                        }
-                        &-2 {
-                            display: flex;
-                            justify-content: space-between;
-                            &-image-container {
-                                width: 40%;
-                            }
-                            &-text-container {
-                                width: 40%;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
 
 
