@@ -708,9 +708,6 @@ footer div {
 
 .home-section-3-container {
   width: 50%;
-}
-
-.home-section-3-container a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -725,7 +722,7 @@ footer div {
   position: relative;
 }
 
-.home-section-3-container a i {
+.home-section-3-container i {
   color: white;
   font-size: 4rem;
   position: absolute;
