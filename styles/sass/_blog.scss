@@ -30,10 +30,12 @@
         ul,
         li {
             list-style: inherit;
+            list-style-position: inside;
             padding: 5px 0;
         }
         h3 {
-            padding: 20px 0;
+            // padding: 20px 0;
+            color: #063974;
         }
         a {
             margin: 10px 0;
@@ -43,6 +45,9 @@
     &-section-3 {
         width: 60%;
         padding-left: 5%;
+        h3 {
+            color: black;
+        }
         &-comment-container {
             display: flex;
             margin-bottom: 50px;
