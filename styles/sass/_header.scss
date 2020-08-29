@@ -1,7 +1,55 @@
+.header {
+
+    &.contact,
+    &.home,
+    &.contact {
+        &-header {
+            height: 95vh;
+            background-position: center;
+            background-size: cover;
+            min-height: 700px;
+        }
+    }
+}
+
+
+
+.home {
+    &-header {
+        background: url(../images/home-image-1.jpg);
+        &-header-box {
+            position: absolute;
+            bottom: -140px;
+            left: 0;
+            width: 47%;
+        }
+    }
+}
+ 
+ 
+ 
+.blog {
+    &-header {
+        background: url(../images/blog-image-1.jpg);
+        h1 {
+            color: white;
+        }
+    }
+} 
+ 
+ 
+.contact {
+    &-header {
+        background: url(../images/contact-image-1.jpg);
+        h1 {
+            color: white;
+        }
+    } 
+}
+ 
  header{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-between;
         nav {
             display: flex;
@@ -16,7 +64,7 @@
             ul {
                 display: flex;
                 li {
-                    margin: 0 15px;
+                    margin: 0 40px;
                     font-weight: bold;
                     a {
                         color: white;
@@ -30,52 +78,39 @@
                 }
             }
         }
+        .header-mid {
+            // width: 760px;
+            // position: relative;
+            margin-bottom: 200px;
+            padding-left: 20vw;
+        }
         .mobiles-menu{
             display: none;
-        }
-        .header-mid {
-            display: flex;
-            // margin-top: 250px;
-            margin-bottom: 150px;
-            // z-index: 10;
-            position: relative;
-            margin-left: 280px;
-            width: 760px;
-            
         }
 }
 
 
 h1 {
-    color: #063974;
-    font-size: 8.7rem;
-    width: 752px;
+    color: #0c5f4c;
+    font-size: calc(1.12rem * 3 + 4.579vw);
     position: relative;
     z-index: 10;
-    
     span {
         font-family: 'Playfair Display SC';
-        color: #0c5f4c;
-        font-size: 11.12rem;
+        color: #063974;
+        font-size: calc(0.87rem * 3 + 5.853vw);
     }
 }
 
-@media (max-width: 850px) {
-    h1 {
-        // color: #063974;
-        font-size: calc(8.7rem*0.75);
-        // width: 752px;
-        span {
-            // font-family: 'Playfair Display SC';
-            // color: #0c5f4c;
-            font-size: calc(11.12rem*0.75);
-        }
+@media (max-width: 950px) {
+    header nav ul li {
+        margin: 0 10px;
     }
 }
-
 
 @media (max-width: 650px) {
     header {
+        flex: none;
         .menu {
             display: none;
         }
@@ -84,9 +119,8 @@ h1 {
         }
         .header-mid {
             position: absolute;
-            top: 300px;
-            right: 0px;
-            margin: 0;
+            bottom: 75px;
+            right: 100px;
         }
     }
 

@@ -2,21 +2,22 @@
 .home {
     &-header {
         background: url(../images/home-image-1.jpg);
-        height: 90vh;
+        height: 95vh;
+        min-height: 700px;
         background-position: center;
         background-size: cover;
         &-header-box {
             position: absolute;
-            top: 0;
-            left: -37%;
-            width: 70%;
+            bottom: -140px;
+            left: 0;
+            width: 47%;
         }
     }
 }
 
 .home-section-1 {
     display: flex;
-    padding: 120px 0;
+    padding: 250px 0;
     &-text-container {
         width: 80%;
         display: flex;
@@ -35,7 +36,7 @@
 
 .home-section-2 {
     background-color: #d2f9f9;
-    padding: 75px 0;
+    padding: 130px 0;
 
     &-gallery {
         display: flex;
@@ -167,11 +168,11 @@
         justify-content: center;
         align-items: center;
         // padding: 200px 0;
-        height: 40vh;
+        height: 60vh;
     }
     &-image-container {
         img {
-            height: 40vh;
+            // height: 40vh;
             object-fit: cover;
         }
         
