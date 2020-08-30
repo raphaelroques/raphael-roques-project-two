@@ -235,11 +235,19 @@ html {
   overflow: hidden;
 }
 
-.header.contact-header, .header.home-header, .header.blog-header {
-  height: 80vh;
+.header.home-header {
+  height: 70vh;
   background-position: center;
   background-size: cover;
   min-height: 700px;
+  position: relative;
+}
+
+.header.contact-header, .header.blog-header {
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  min-height: 450px;
   position: relative;
 }
 
@@ -326,7 +334,7 @@ header nav ul li:nth-child(4) {
 }
 
 header .header-mid {
-  margin-bottom: 250px;
+  margin-bottom: 200px;
   padding-left: 20vw;
 }
 
@@ -475,7 +483,7 @@ footer div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 250px 0;
+  padding: 100px 0;
 }
 
 .home-section-1-text-container {
@@ -504,8 +512,8 @@ footer div {
 }
 
 .home-section-2 {
-  background-color: #d2f9f9;
-  padding: 130px 0;
+  background-color: #50e3c360;
+  padding: 75px 0;
 }
 
 .home-section-2-gallery {
@@ -565,7 +573,7 @@ footer div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 50px 0 50px 100px;
+  padding: 10px 0 10px 100px;
   position: relative;
 }
 
@@ -595,7 +603,7 @@ footer div {
 }
 
 .home-section-4 {
-  background: #d2f9f9;
+  background: #50e3c341;
   padding: 20px 0;
 }
 
@@ -676,7 +684,12 @@ footer div {
   margin-right: 140px;
 }
 
-.home-section-5-text-container {
+.home-section-5-container {
+  padding: 25px 0;
+  min-height: 450px;
+}
+
+.home-section-5-container-text-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -691,12 +704,12 @@ footer div {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  height: 60vh;
-  min-height: 603px;
+  height: 40vh;
 }
 
 .home-section-5-image-container img {
-  height: 60vh;
+  height: 40vh;
+  min-height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -815,6 +828,10 @@ footer div {
 .blog-section-1-text-container {
   padding: 0 50px 50px 0;
   margin-left: calc((5 * 100%) / 60);
+}
+
+.blog-section-1-text-container p {
+  padding: 10px 0;
 }
 
 .blog-section-1-image-container-image {
@@ -1017,7 +1034,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1900px;
+  max-width: 1280px;
   margin: 0 auto;
   width: 85%;
 }
@@ -1037,6 +1054,7 @@ button {
 p {
   letter-spacing: 2px;
   line-height: 32px;
+  font-size: 1.5rem;
 }
 
 h2 {

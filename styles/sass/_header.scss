@@ -1,12 +1,23 @@
 .header {
-    &.contact,
-    &.home,
-    &.blog {
+    &.home
+    {
         &-header {
-            height: 80vh;
+            height: 70vh;
             background-position: center;
             background-size: cover;
             min-height: 700px;
+            position: relative;
+        }
+    }
+}
+.header {
+    &.contact,
+    &.blog {
+        &-header {
+            height: 50vh;
+            background-position: center;
+            background-size: cover;
+            min-height: 450px;
             position: relative;
         }
     }
@@ -74,7 +85,7 @@
             }
         }
         .header-mid {
-            margin-bottom: 250px;
+            margin-bottom: 200px;
             padding-left: 20vw;
         }
         .mobiles-menu{

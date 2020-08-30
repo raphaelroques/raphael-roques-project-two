@@ -12,6 +12,9 @@
         &-text-container {
             padding: 0 50px 50px 0;
             margin-left: calc((5 * 100%) / 60);
+            p {
+                padding: 10px 0;
+            }
         }
         &-image-container {
             &-image {
