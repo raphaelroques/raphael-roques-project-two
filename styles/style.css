@@ -691,7 +691,7 @@ footer div {
   margin-right: 0;
 }
 
-.home-section-2-gallery li:hover {
+.home-section-2-gallery li img:hover {
   -webkit-transform: scale(105%);
           transform: scale(105%);
 }
@@ -728,7 +728,7 @@ footer div {
   position: relative;
 }
 
-.home-section-3-container i {
+.home-section-3-container a {
   color: white;
   font-size: 4rem;
   position: absolute;
@@ -747,6 +747,10 @@ footer div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.home-section-3-container a:hover, .home-section-3-container a:focus {
+  background-color: #59e2c4a6;
 }
 
 .home-section-4 {
@@ -903,10 +907,6 @@ footer div {
   }
   .home-section-3-container a {
     position: absolute;
-    left: -400px;
-    top: 15px;
-  }
-  .home-section-3-container a i {
     top: -10px;
     left: 400px;
   }
