@@ -30,6 +30,7 @@
         <div class="mobiles-menu">
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
+                <span class="sr-only">open the mobile menu</span>
             </a>
             <div class="mobile-menu-container" id="myLinks">
                 <a href="./index.html">HOME</a>
@@ -45,7 +46,7 @@
             <img  src="./images/header-box.jpg" alt="">
         </div> -->
         <div class="header-mid wrapper">
-            <h1> Welcome to <span>BEACHSTAYS</span></h1>
+            <h1> Welcome to <span role="heading">BEACHSTAYS</span></h1>
             <div class="home-header-header-box">
                 <img  src="./images/header-box.jpg" alt="">
             </div>
@@ -82,9 +83,17 @@
         <!-- section-2 -->
         <section class="home-section-2">
             <ul class="home-section-2-gallery wrapper">
-                <li><a href=""><img src="images/gallery-image1.jpg" alt="DO IT LATER PLEASE!!"></a></li>
-                <li><a href=""><img src="images/gallery-image2.jpg" alt="DO IT LATER PLEASE!!"></a></li>
-                <li><a href=""><img src="images/gallery-image3.jpg" alt="DO IT LATER PLEASE!!"></a></li>
+                <li>
+                    <a href="#image1"><img src="images/gallery-image1.jpg" alt="DO IT LATER PLEASE!!">
+                        <span class="sr-only">open image 1</span></a>
+                </li>
+                <li>
+                    <a href="#image2"><img src="images/gallery-image2.jpg" alt="DO IT LATER PLEASE!!">
+                        <span class="sr-only">open image 2</span></a>  
+                </li>
+                <li><a href="#image3"><img src="images/gallery-image3.jpg" alt="DO IT LATER PLEASE!!">
+                    <span class="sr-only">open image 3</span></a>
+                </li>
             </ul>
         </section>
         <!-- section-3 -->
