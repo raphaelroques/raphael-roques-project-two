@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
     <script src="https://kit.fontawesome.com/28cb818fe9.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -14,6 +15,7 @@
 <body>
     <!-- HEADER -->
     <header class="header contact-header">
+        <!-- NAV -->
         <!-- NAV -->
         <nav class="wrapper">
             <a class="logo" href="#Home">BEACHSTAYS</a>
@@ -24,10 +26,10 @@
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-        <!-- mobile menu -->
         <div class="mobiles-menu">
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
+                <span class="sr-only">open the mobile menu</span>
             </a>
             <div class="mobile-menu-container" id="myLinks">
                 <a href="./index.html">HOME</a>
@@ -35,7 +37,6 @@
                 <a href="./blog.html">BLOG</a>
                 <a href="./contact.html">CONTACT</a>
             </div>
-            
         </div>
         <!-- Header-MID -->
         <div class="header-mid wrapper">
@@ -45,44 +46,45 @@
 
     <!-- main -->
     <main class="contact-main wrapper">
-            <div class="form contact-form">
-                <form action="#">
-                    <div class="form-top">
-                        <label class="sr-only" for="name">Name</label>
-                        <input class="form-top-name" type="text" id="name" name="name" placeholder="Name">
-                        <label class="sr-only" for="email">Email</label>
-                        <input class="form-top-email" type="email" id="email" name="email" placeholder="Email">
-                    </div>
-                    <div>
-                        <label class="sr-only" for="message">Message</label>
-                        <textarea class="form-message" name="message" id="message" cols="30" rows="10" placeholder="Message" required
-                            maxlength="255"></textarea>
-                    </div>
-                    <div>
-                        <input class="form-submit" type="submit" value="POST COMMENT">
-                    </div>
-                </form>
-            </div>
+        <div class="form contact-form">
+            <form action="#">
+                <div class="form-top">
+                    <label class="sr-only" for="name">Name</label>
+                    <input class="form-top-name" type="text" id="name" name="name" placeholder="Name">
+                    <label class="sr-only" for="email">Email</label>
+                    <input class="form-top-email" type="email" id="email" name="email" placeholder="Email">
+                </div>
+                <div>
+                    <label class="sr-only" for="message">Message</label>
+                    <textarea class="form-message" name="message" id="message" cols="30" rows="10" placeholder="Message"
+                        required maxlength="255"></textarea>
+                </div>
+                <div>
+                    <button class="form-submit" type="submit">POST COMMENT</button>
+                </div>
+            </form>
+        </div>
 
-            <div class="contact-section-2">
-                <ul class="contact-section-2-socials">
-                    <!-- <li>
-                        <a href="#" target="_blank" aria-label="Visit BEACHSTAYS on twitter."><i class="fab fa-twitter"></a>
-                    </li> -->
-                    <li><a href="#twitter"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#instagram"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#facebook"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#google-plus"><i class="fab fa-google-plus-g"></i></a></li>
-                </ul>
-                <address>
-                    <a class="contact-section-2-info">info@email.com</a>
-                    <p>123 - 456 - 7890</p>
-                    <p>123 Queen Street West,</p>
-                    <p>Unit 10</p>
-                    <p>Toronto, Ontario</p>
-                    <p>M5V2D5</p>
-                </address>
-            </div>
+        <div class="contact-section-2">
+            <ul class="contact-section-2-socials">
+                <li><a href="#twitter"><i class="fab fa-twitter"></i>
+                        <span class="sr-only">visit BEACHSTAYS on twitter</span></a></li>
+                <li><a href="#instagram"><i class="fab fa-instagram"></i>
+                        <span class="sr-only">visit BEACHSTAYS on instagram</span></a></li>
+                <li><a href="#facebook"><i class="fab fa-facebook-f"></i>
+                        <span class="sr-only">visit BEACHSTAYS on facebook</span></a></li>
+                <li><a href="#google-plus"><i class="fab fa-google-plus-g"></i>
+                        <span class="sr-only">visit BEACHSTAYS on google-plus</span></a></li>
+            </ul>
+            <address>
+                <a class="contact-section-2-info">info@email.com</a>
+                <p>123 - 456 - 7890</p>
+                <p>123 Queen Street West,</p>
+                <p>Unit 10</p>
+                <p>Toronto, Ontario</p>
+                <p>M5V2D5</p>
+            </address>
+        </div>
     </main>
 
     <!-- FOOTER -->
