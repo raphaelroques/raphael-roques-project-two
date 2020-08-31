@@ -779,6 +779,17 @@ footer div {
     top: 0px;
     left: 25px;
   }
+  .home-section-5 {
+    padding: 100px 0 10px;
+  }
+  .home-section-5-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media (max-width: 650px) {
@@ -829,9 +840,6 @@ footer div {
     background: #50e3c3;
     background: -webkit-gradient(linear, left top, right top, from(rgba(80, 227, 195, 0.497637)), to(white));
     background: linear-gradient(90deg, rgba(80, 227, 195, 0.497637) 0%, white 100%);
-  }
-  .home-section-5 {
-    padding: 100px 0 50px;
   }
 }
 

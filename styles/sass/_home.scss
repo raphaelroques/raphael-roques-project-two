@@ -197,6 +197,15 @@
                 }
             }
         } 
+        &-section-5 {
+            padding: 100px 0 10px;
+            &-container {
+                display: flex;
+                align-items: center;
+                
+            }
+        }
+
     }
 }
 
@@ -235,9 +244,6 @@
         &-section-4 {
             background: rgb(80,227,195);
             background: linear-gradient(90deg, rgba(80,227,195,0.49763655462184875) 0%, rgba(255,255,255,1) 100%);
-        }
-        &-section-5 {
-            padding: 100px 0 50px;
         }
     }  
 }
