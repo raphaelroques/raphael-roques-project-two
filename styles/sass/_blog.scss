@@ -5,8 +5,8 @@
     }   
     &-section-1 {
         width: 60%;
-        border-right: 5px solid #50e3c2;
-        border-bottom: 5px solid #50e3c2;
+        border-right: 5px solid $greenish-cyan;
+        border-bottom: 5px solid $greenish-cyan;
         margin-bottom: 100px;
         padding-right: 5px;
         &-text-container {
@@ -20,7 +20,7 @@
             &-image {
                 transform: translate(0, -100px);
                 box-shadow: 10px 10px;
-                color: #50e3c2;
+                color: $greenish-cyan;
             }
         }
     }
@@ -36,7 +36,7 @@
         }
         h3 {
             // padding: 20px 0;
-            color: #063974;
+            color: $twilight-blue;
         }
         a {
             margin: 10px 0;
@@ -96,8 +96,7 @@
                         &-text-container {
                             width: 40%;
                         }
-                    }
-                    
+                    } 
                 }
             }
         }
@@ -113,8 +112,7 @@
                 }
             }
         }
-    }
-    
+    }  
 }
 
 @media (max-width: 700px) {
@@ -123,9 +121,9 @@
             &-section-2 {
                 flex-direction: column;
                 &-image-container,
-                    &-text-container {
-                        width: 100%;
-                    }
+                &-text-container {
+                    width: 100%;
+                }
             }
         }
     }

@@ -5,10 +5,10 @@
     &-form {
         width: 80%;
         transform: translate(-35px, -110px);
-        background: white;
+        background: $ice-blue;
         padding: 31px;
         box-shadow: 10px 10px;
-        color: #50e3c2;
+        color: $greenish-cyan;
     
     }
     &-section-2 {
@@ -23,18 +23,23 @@
             width: 134px;
             margin: 20px 0;
             a {
-                color: #063974;
+                color: $twilight-blue;
                 margin-right: 20px;
                 margin-bottom: 20px;
             }
         }
         &-info {
-            margin-bottom: 20px;
+            display: inline-block;
+            padding-bottom: 20px;
+        } 
+        P {
+            letter-spacing: 1.9px;
+            line-height: 25px;
+            font-size: 1.5rem;
+            font-weight: 600;
         }
-        
     }
 }
-
 
 @media (max-width: 650px) {
     .contact {

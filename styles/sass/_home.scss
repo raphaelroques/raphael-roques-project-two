@@ -12,16 +12,15 @@
         width: 30%;   
         img {
             box-shadow: -20px 20px;
-            color: #50e3c2;
+            color: $greenish-cyan;
         }
     }
 }
 
 .home-section-2 {
-    // background-color: #50e3c360;
-    background-image: linear-gradient(to right, #50e3c360 , #50e3c328);
+    background: rgb(80,227,195);
+    background: linear-gradient(27deg, rgba(80,227,195,0.49763655462184875) 0%, rgba(255,255,255,1) 100%);
     padding: 75px 0;
-
     &-gallery {
         display: flex;
         flex-direction: row;
@@ -31,14 +30,14 @@
             width: calc(100% - 40px)/3;
             display: block;
             margin-right: 20px;
-                &:nth-child(3){
-                    margin-right: 0;
+            &:nth-child(3){
+                margin-right: 0;
                 }
                 img {
                     &:hover {
                     transform: scale(105%);
-                    }  
-                }
+                }  
+            }
         } 
     }  
 }
@@ -49,7 +48,7 @@
     padding: 50px 0;
     justify-content: space-between;
     h3,p {
-        color: #0c5f4c;
+        color: $spruce;
     }
     &-container {
         width: 50%;
@@ -59,12 +58,12 @@
         padding: 10px 0 10px 100px;
         position: relative;
         a {
-        color: white;
+        color: $ice-blue;
         font-size: 3rem;
         position: absolute;
         left: 30px;
         top: 10px;
-        background: #50e3c2;
+        background: $greenish-cyan;
         border-radius: 50%;
         width: 60px;
         height: 60px;
@@ -75,16 +74,16 @@
             &:focus {           
                 background-color: #59e2c4a6;
             }
-        }
-        
+        }   
     }
 }
 
 .home-section-4 {
-    background: #50e3c341;
+    background: rgb(80,227,195);
+    background: linear-gradient(27deg, rgba(80,227,195,0.49763655462184875) 0%, rgba(255,255,255,1) 100%);
     padding: 20px 0;
     h2 {
-        color: #063974;
+        color: $twilight-blue;
     }
     &-container {
         display: flex;
@@ -99,7 +98,7 @@
         &-image-container {
             display: flex;
             img {
-                color: #50e3c2;
+                color: $greenish-cyan;
                 object-fit: cover;
             }
             &-top {
@@ -130,8 +129,6 @@
     }
 }
 
-
-
 .home-section-5 {
     &-container {
         padding: 25px 0;
@@ -150,12 +147,9 @@
             height: 40vh;
             min-height: 400px;
             object-fit: cover;
-        }
-        
+        } 
     }
-
 }
-
 
 @media (max-width: 950px) {
     .home-section-4-container {
@@ -210,49 +204,41 @@
     .home {
         &-section-1 {
             flex-direction: column;
-            padding: 200px 0 100px;
+            align-items: center;
+            padding: 100px 0 50px;
             &-text-container {
-                width: 100%;
+                width: 80%;
                 padding: 0;
                 align-items: center;
-                text-align: center;
+                text-align: justify;
             }
             &-image-container {
-                width: 100%;
+                width: 70%;
                 padding: 50px 0;
             }
         }
         &-section-2 {
             padding: 0;
             margin: 0;
+            background: rgb(80,227,195);
+            background: linear-gradient(90deg, rgba(80,227,195,0.49763655462184875) 0%, rgba(255,255,255,1) 100%);
             &-gallery {
                 flex-direction: column;
                 align-items: center;
                 li {
                     margin: 0;
                     padding: 20px;
-                    width: 70%;
+                    width: 80%;
                 }
             }
         }
+        &-section-4 {
+            background: rgb(80,227,195);
+            background: linear-gradient(90deg, rgba(80,227,195,0.49763655462184875) 0%, rgba(255,255,255,1) 100%);
+        }
         &-section-5 {
-            padding: 100px 0;
+            padding: 100px 0 50px;
         }
     }  
 }
-
-// @media (max-width: 550px) {
-//     .home {
-//         &-section-3 {
-//             &-container {
-//                 a {
-//                     i {
-//                         top: 30px;
-//                         left: 300px;
-//                     }
-//                 }
-//             }
-//         } 
-//     }
-// }
 

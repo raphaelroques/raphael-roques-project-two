@@ -6,8 +6,12 @@
             background-position: center;
             background-size: cover;
             min-height: 700px;
-            position: relative;
-        }
+            position: relative; 
+            .header-mid {
+                margin-bottom: 200px;
+                padding-left: 20vw;
+            }
+        } 
     }
 }
 .header {
@@ -19,10 +23,13 @@
             background-size: cover;
             min-height: 450px;
             position: relative;
+            .header-mid {
+                margin-bottom: 100px;
+                padding-left: 20vw;
+            }
         }
     }
 }
-
 .home {
     &-header {
         background: url(../images/home-image-1.jpg);
@@ -34,21 +41,19 @@
         }
     }
 }
- 
 .blog {
     &-header {
         background: url(../images/blog-image-1.jpg);
         h1 {
-            color: white;
+            color: $ice-blue;
         }
     }
 } 
-
 .contact {
     &-header {
         background: url(../images/contact-image-1.jpg);
         h1 {
-            color: white;
+            color: $ice-blue;
         }
     } 
 }
@@ -65,7 +70,7 @@
             .logo {
                 font-family: 'Playfair Display SC';
                 font-size: 3.46rem;
-                color: #50e3c2;
+                color: $greenish-cyan;
             }
             ul {
                 display: flex;
@@ -73,9 +78,9 @@
                     margin: 0 40px;
                     font-weight: bold;
                     a {
-                        color: white;
+                        color: $ice-blue;
                         &:hover {
-                            color: #50e3c2;
+                            color: $greenish-cyan;
                         }
                     }
                 }
@@ -84,23 +89,18 @@
                 }
             }
         }
-        .header-mid {
-            margin-bottom: 200px;
-            padding-left: 20vw;
-        }
         .mobiles-menu{
             display: none;
         }
 }
-
 h1 {
-    color: #0c5f4c;
+    color: $spruce;
     font-size: calc(1.12rem * 3 + 4.579vw);
     position: relative;
     z-index: 10;
     span {
         font-family: 'Playfair Display SC';
-        color: #063974;
+        color: $twilight-blue;
         font-size: calc(0.87rem * 3 + 5.853vw);
     }
 }
@@ -114,15 +114,19 @@ h1 {
 @media (max-width: 650px) {
     .header {
         &.contact,
-        &.home,
         &.blog {
+            &-header {
+                height: 50vh;
+                min-height: 550px;
+            }
+        }
+        &.home {
             &-header {
                 height: 70vh;
                 min-height: 550px;
             }
         }
     }
-
     .header {
         .menu {
             display: none;
@@ -130,32 +134,38 @@ h1 {
         .mobiles-menu{
             display: block;
         }
-        .header-mid {
-            margin: 0 auto 200px;
-            padding: 0;
+    }
+   .header {
+        &.home,
+        &.contact,
+        &.blog {
+            &-header {
+                .header-mid {
+                    margin-bottom: 200px;
+                    padding-left: 5%;
+                }
+            }
         }
     }
-
     /* mobile menu */
     .mobiles-menu {
         padding: 0 24px 300px;
         overflow: hidden;
         a {
-            color: white;
+            color: $ice-blue;
             padding: 30px 20px 10px;
             font-size: 2rem;
             font-weight: 700;
             display: block;
             text-align: right;
-            
             &:hover,
             &:focus {
-                color: #50e3c2;
+                color: $greenish-cyan;
                 font-size: 2rem;
                 font-weight: 900;
             }
             &.icon {
-                background: #2c2d2c55;
+                background: hex($black , 55);
                 display: block;
                 position: absolute;
                 right: 0;
@@ -169,6 +179,5 @@ h1 {
         height: 50vh;
     }
     /* end of mobile menu */
-
 }
 
