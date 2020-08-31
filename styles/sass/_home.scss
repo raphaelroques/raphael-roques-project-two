@@ -19,7 +19,7 @@
 
 .home-section-2 {
     background: rgb(80,227,195);
-    background: linear-gradient(27deg, rgba(80,227,195,0.49763655462184875) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(27deg, rgba(80,227,195,0.60) 0%, $ice-blue 100%);
     padding: 75px 0;
     &-gallery {
         display: flex;
@@ -80,7 +80,7 @@
 
 .home-section-4 {
     background: rgb(80,227,195);
-    background: linear-gradient(27deg, rgba(80,227,195,0.49763655462184875) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(27deg, rgba(80,227,195,0.60) 0%, $ice-blue 100%);
     padding: 20px 0;
     h2 {
         color: $twilight-blue;

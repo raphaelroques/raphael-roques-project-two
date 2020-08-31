@@ -257,7 +257,7 @@ html {
 }
 
 .header.contact-header .header-mid, .header.blog-header .header-mid {
-  margin-bottom: 100px;
+  margin-bottom: 120px;
   padding-left: 20vw;
 }
 
@@ -335,7 +335,7 @@ header nav ul li a {
   color: #FAFFFE;
 }
 
-header nav ul li a:hover {
+header nav ul li a:hover, header nav ul li a:focus {
   color: #50E3C2;
 }
 
@@ -421,6 +421,10 @@ h1 span {
 footer {
   background: #2C2C2C;
   color: white;
+}
+
+footer a {
+  color: #fa3c0c;
 }
 
 footer div {
@@ -522,7 +526,7 @@ footer div {
 
 .home-section-2 {
   background: #50e3c3;
-  background: linear-gradient(27deg, rgba(80, 227, 195, 0.497637) 0%, white 100%);
+  background: linear-gradient(27deg, rgba(80, 227, 195, 0.6) 0%, #FAFFFE 100%);
   padding: 75px 0;
 }
 
@@ -614,7 +618,7 @@ footer div {
 
 .home-section-4 {
   background: #50e3c3;
-  background: linear-gradient(27deg, rgba(80, 227, 195, 0.497637) 0%, white 100%);
+  background: linear-gradient(27deg, rgba(80, 227, 195, 0.6) 0%, #FAFFFE 100%);
   padding: 20px 0;
 }
 
@@ -884,6 +888,11 @@ footer div {
 .blog-section-2 a {
   margin: 10px 0;
   display: inline-block;
+  font-weight: 600;
+}
+
+.blog-section-2 a:hover, .blog-section-2 a:focus {
+  color: red;
 }
 
 .blog-section-3 {
@@ -1012,10 +1021,19 @@ footer div {
   margin: 20px 0;
 }
 
+.contact-section-2-socials li {
+  margin-right: 15px;
+}
+
 .contact-section-2-socials a {
   color: #063974;
   margin-right: 20px;
   margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.contact-section-2-socials a:hover, .contact-section-2-socials a:focus {
+  color: #063974b7;
 }
 
 .contact-section-2-info {
@@ -1028,6 +1046,12 @@ footer div {
   line-height: 25px;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+@media (max-width: 950px) {
+  .contact-main .contact-section-2 {
+    width: 40%;
+  }
 }
 
 @media (max-width: 650px) {
@@ -1060,7 +1084,7 @@ html {
 
 body {
   font-size: 2rem;
-  color: #0C5F4C;
+  color: #2C2C2C;
 }
 
 .wrapper {

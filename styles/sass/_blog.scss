@@ -41,6 +41,11 @@
         a {
             margin: 10px 0;
             display: inline-block;
+            font-weight: 600;
+            &:hover,
+            &:focus {
+                color: red;
+            }
         }
     }
     &-section-3 {

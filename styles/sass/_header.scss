@@ -24,7 +24,7 @@
             min-height: 450px;
             position: relative;
             .header-mid {
-                margin-bottom: 100px;
+                margin-bottom: 120px;
                 padding-left: 20vw;
             }
         }
@@ -79,7 +79,8 @@
                     font-weight: bold;
                     a {
                         color: $ice-blue;
-                        &:hover {
+                        &:hover,
+                        &:focus {
                             color: $greenish-cyan;
                         }
                     }

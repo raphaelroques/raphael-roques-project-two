@@ -1,6 +1,9 @@
 footer {
     background: $black;
     color: white;
+    a {
+        color: rgb(250, 60, 12);
+    }
     div {
         height: 5vh;
         display: flex;

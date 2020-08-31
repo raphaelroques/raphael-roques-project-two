@@ -22,10 +22,18 @@
             justify-content: space-between;
             width: 134px;
             margin: 20px 0;
+            li {
+                margin-right: 15px;
+            }
             a {
                 color: $twilight-blue;
                 margin-right: 20px;
                 margin-bottom: 20px;
+                font-size: 3rem;
+                &:hover,
+                &:focus {
+                    color: #063974b7;
+                }
             }
         }
         &-info {
@@ -37,6 +45,16 @@
             line-height: 25px;
             font-size: 1.5rem;
             font-weight: 600;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .contact {
+        &-main {
+            .contact-section-2 {
+                width: 40%;
+            }
         }
     }
 }
