@@ -1086,11 +1086,10 @@ footer div {
 
 html {
   font-size: 62.5%;
-  font-family: 'Playfair Display SC', serif;
-  font-family: 'Lato', sans-serif;
 }
 
 body {
+  font-family: 'Lato', 'Times New Roman', sans-serif;
   font-size: 2rem;
   color: #2C2C2C;
 }
